@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 type Student struct {
 	Name           string
@@ -50,11 +52,12 @@ func main() {
 			Dist:  "Bhadohi",
 			Block: "Aurai",
 		},
+		
 	}
-	var VishalAddress *Student
-	VishalAddress = &Vishal
-	ShivamAddress := &Shivam
-	fmt.Println(VishalAddress, ShivamAddress)
+var VishalAddress *Student
+		VishalAddress= &Vishal
+ShivamAddress :=&Shivam
+fmt.Println(VishalAddress,ShivamAddress)
 
 	var phone phone
 	phone.model = "vivo x21"
@@ -79,3 +82,4 @@ func main() {
 	fmt.Println(" mobile", phone)
 	fmt.Println("Laptop", laptop)
 }
+ 
