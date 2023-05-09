@@ -6,6 +6,7 @@ func main() {
 	getsum(1 ,2,3)
 	getsum(400 ,400,500,200,)
 getsum([]int{20,30,30,40,100}...)
+
 }
 
 func getsum(number ...int) {
@@ -18,3 +19,4 @@ fmt.Println(len(number))
 	}
 	fmt.Println(total)
 }
+  
