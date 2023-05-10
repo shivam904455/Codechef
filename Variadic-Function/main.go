@@ -3,20 +3,26 @@ package main
 import "fmt"
 
 func main() {
-	getsum(1 ,2,3)
-	getsum(400 ,400,500,200,)
-getsum([]int{20,30,30,40,100}...)
+	shivam(1, 23, 3, 4, 3, 2, 2, 2, 2, 2, 2)
 
+	shivam([]int{1, 2, 2, 1, 1, 3, 3}...)
+	
 }
-
-func getsum(number ...int) {
-fmt.Println(number ," = ")
-fmt.Println(len(number))
-
+ 
+func shivam(numbers ...int) {
+	
+	fmt.Println(numbers)
+	
+	fmt.Println("length", len(numbers))
+	
 	total := 0
-	for _, val := range number {
-		total += val
-	}
-	fmt.Println(total)
+	
+	for _, val := range numbers {
+	
+	total += val
+	
 }
-  
+
+	fmt.Println(total)
+
+}
