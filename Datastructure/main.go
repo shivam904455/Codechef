@@ -1,85 +1,54 @@
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
 type Student struct {
 	Name           string
 	Class          int
-	Rollnumber     int
-	StudentAddress Address
+	Rollno         int
+	Section        string
+	Subjet         string
+	Studentaddress Address
 }
-
 type Address struct {
 	Vill  string
+	Post  string
 	Dist  string
-	Block string
-}
-type phone struct {
-	model string
-	Brand string
-	IMEI  int
-	Config
-}
-type Laptop struct {
-	model        string
-	Brand        string
-	Serialnum    int
-	Configration Config
-}
-type Config struct {
-	RAM       int
-	ROM       int
-	Processar string
+	State string
 }
 
 func main() {
+
 	var Vishal Student
-	Vishal.Name = "Vishal singh"
+	Vishal.Name = "vishal singh"
 	Vishal.Class = 12
-	Vishal.Rollnumber = 233
-	Vishal.StudentAddress.Vill = "Ghambhir singhpur"
-	Vishal.StudentAddress.Dist = "Varansi"
-	Vishal.StudentAddress.Block = "Aurai"
+	Vishal.Subjet = "Hindi"
+	Vishal.Rollno = 332
+	Vishal.Section = "B"
+	Vishal.Studentaddress.Vill = "Sawara"
+	Vishal.Studentaddress.Post = "Aurai"
+	Vishal.Studentaddress.Dist = "Badohi"
+	Vishal.Studentaddress.State = "utter pradesh"
 
 	Shivam := Student{
-		Name:       "Shivam singh",
-		Class:      13,
-		Rollnumber: 334,
-		StudentAddress: Address{
-			Vill:  "aurai",
-			Dist:  "Bhadohi",
-			Block: "Aurai",
-		},
-		
-	}
-var VishalAddress *Student
-		VishalAddress= &Vishal
-ShivamAddress :=&Shivam
-fmt.Println(VishalAddress,ShivamAddress)
-
-	var phone phone
-	phone.model = "vivo x21"
-	phone.Brand = "vivo"
-	phone.IMEI = 133343757
-	phone.Config.RAM = 2
-	phone.Config.ROM = 128
-	phone.Config.Processar = " exctra"
-
-	laptop := Laptop{
-		model:     "I5",
-		Brand:     "HP",
-		Serialnum: 12333,
-		Configration: Config{
-			RAM:       16,
-			ROM:       1024,
-			Processar: "intel",
+		Name:    "shivam",
+		Class:   12212,
+		Subjet:  "hindi",
+		Section: "c",
+		Rollno:  3333,
+		Studentaddress: Address{
+			Vill:  "ramayan ",
+			Post:  "auraiya",
+			Dist:  "varansi",
+			State: "utter",
 		},
 	}
-	fmt.Println("student id ", Vishal)
-	fmt.Println("student id ", Shivam)
-	fmt.Println(" mobile", phone)
-	fmt.Println("Laptop", laptop)
+	var Vishaladdress * Student
+	Vishaladdress =&Vishal
+	Shivamaddress:=&Shivam
+	fmt.Println(Vishaladdress,Shivamaddress)
+
+	// fmt.Println(Vishal)
+	// fmt.Println(Shivam)
+
 }
- 
