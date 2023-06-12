@@ -3,14 +3,14 @@ package main
 import "fmt"
 
 func main() {
-	var T int
-	fmt.Scan(&T)
+	var t int
+	fmt.Scan(&t)
 
-	for i := 0; i < T; i++ {
-		var X, Y int
-		fmt.Scan(&X, &Y)
+	for i := 0; i < t; i++ {
+		var n int
+		fmt.Scan(&n)
 
-		if X < Y {
+		if n%3 == 0 {
 			fmt.Println("YES")
 		} else {
 			fmt.Println("NO")
